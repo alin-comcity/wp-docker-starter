@@ -2,7 +2,7 @@
 
 A simple, production-ready WordPress + Docker starter template.
 
-A minimal Docker-based WordPress development environment with MySQL and phpMyAdmin. Easy to set up and customize for local development or rapid prototyping.
+A minimal and ready-to-use Docker-based WordPress development environment. This setup includes WordPress, MySQL, and phpMyAdmin, making it ideal for local development, testing, or quick prototyping.
 
 ## 📦 What's Included
 
@@ -32,11 +32,29 @@ docker-compose up -d
 WordPress: http://localhost:8000
 
 phpMyAdmin: http://localhost:8080
-(Host: db, Username: user, Password: password)
+
+DB Host: db
+DB User: user
+DB Password: password
+DB Name: WordPress
 
 ### 5. Stop & Clean
 
 docker-compose down -v
+
+# Requirements
+
+Docker
+
+Docker Compose
+
+# Customization
+
+Modify docker-compose.yml for custom port, DB config, etc.
+
+Add themes/plugins inside html/wp-content/
+
+To persist DB data, Docker volumes are already configured.
 
 # Created By
 
@@ -46,3 +64,7 @@ https://alinsworld.com/
 # Created Date
 
 04-May-2025
+
+# License
+
+MIT License
