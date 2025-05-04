@@ -1,0 +1,46 @@
+# Ignore WordPress core (if not customized)
+wordpress/
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+*.log
+
+# Ignore PHPStorm and VSCode settings
+.idea/
+.vscode/
+
+# Node modules (if using for theme or plugin dev)
+node_modules/
+
+# Composer dependencies
+vendor/
+
+# Docker-specific
+*.pid
+*.sock
+docker-compose.override.yml
+docker-compose.*.yml
+logs/
+tmp/
+
+# OS-specific
+*.swp
+*.swo
+
+# Backup and archive files
+*.zip
+*.tar.gz
+*.bak
+*.tmp
+
+# Ignore database dump files
+*.sql
+*.sql.gz
